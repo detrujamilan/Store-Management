@@ -4,7 +4,6 @@ import {
   StatusBar,
   Image,
   TextInput,
-  Pressable,
   TouchableOpacity,
 } from "react-native";
 import React from "react";
@@ -66,10 +65,17 @@ const Login = () => {
         </View>
       </View>
       <View className="pt-[53px] px-8">
-        <TouchableOpacity className="bg-[#0098FF] justify-center items-center rounded-[10px]">
+        <TouchableOpacity 
+        onPress={()=>{
+          console.log("Press Enter")
+        }}
+        className="bg-[#0098FF] justify-center items-center rounded-[10px]">
+
+          
           <Text
             style={{ fontFamily: "poppinsMedium" }}
             className="py-5 text-white text-lg"
+            
           >
             Login
           </Text>
