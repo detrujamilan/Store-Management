@@ -6,7 +6,8 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
+import { APP_ENV } from "@env";
 
 const socialData = [
   {
@@ -21,6 +22,13 @@ const socialData = [
 ];
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = () => {
+    console.log("Done");
+  };
+
   return (
     <View>
       <StatusBar
@@ -46,7 +54,11 @@ const Login = () => {
             placeholder="Email"
             placeholderTextColor="#000"
             className="px-5 py-2"
+            value={email}
             style={{ fontFamily: "poppinsMedium" }}
+            onChangeText={(text) => {
+              setEmail(text);
+            }}
           />
         </View>
         <View className="border-2 rounded-[10px] mt-5">
@@ -54,8 +66,12 @@ const Login = () => {
             placeholder="Password"
             placeholderTextColor="#000"
             className="px-5 py-2 "
+            value={password}
             secureTextEntry={true}
             style={{ fontFamily: "poppinsMedium" }}
+            onChangeText={(text) => {
+              setPassword(text);
+            }}
           />
         </View>
         <View className="justify-end items-end pt-4 ">
@@ -65,17 +81,13 @@ const Login = () => {
         </View>
       </View>
       <View className="pt-[53px] px-8">
-        <TouchableOpacity 
-        onPress={()=>{
-          console.log("Press Enter")
-        }}
-        className="bg-[#0098FF] justify-center items-center rounded-[10px]">
-
-          
+        <TouchableOpacity
+          onPress={handleSubmit}
+          className="bg-[#0098FF] justify-center items-center rounded-[10px]"
+        >
           <Text
             style={{ fontFamily: "poppinsMedium" }}
             className="py-5 text-white text-lg"
-            
           >
             Login
           </Text>
