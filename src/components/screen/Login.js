@@ -39,7 +39,7 @@ const Login = () => {
       <View className="justify-center items-center">
         <Image
           source={require("../../../src/assets/images/Logo.png")}
-          className="w-[160px] h-[146px] mt-6 "
+          className="w-[160px] h-[146px] mt-2"
         />
       </View>
       <Text

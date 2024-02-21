@@ -4,6 +4,7 @@ import Login from './src/components/screen/Login';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
+import SignUp from './src/components/screen/SignUp';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -12,6 +13,7 @@ export default function App() {
     'poppinsMedium': require('./src/assets/fonts/Poppins-Medium.ttf'),
     'poppinsLight': require('./src/assets/fonts/Poppins-Light.ttf'),
     'poppinsRegular': require('./src/assets/fonts/Poppins-Regular.ttf'),
+    'poppinsThin': require('./src/assets/fonts/Poppins-Thin.ttf'),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -25,7 +27,8 @@ export default function App() {
   }
   return (
     <View className="flex-1" onLayout={onLayoutRootView}>
-     <Login/>
+     {/* <Login/> */}
+     <SignUp/>
     </View>
   );
 }
