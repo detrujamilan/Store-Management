@@ -25,6 +25,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
+  
   const handleSubmit = () => {
     console.log("Done");
   };
@@ -32,6 +34,7 @@ const Login = () => {
   return (
     <View>
       <StatusBar
+      
         barStyle="dark-content"
         hidden={false}
         backgroundColor="#fff"
@@ -87,8 +90,7 @@ const Login = () => {
         >
           <Text
             style={{ fontFamily: "poppinsMedium" }}
-            className="py-5 text-white text-lg"
-          >
+            className="py-5 text-white text-lg"          >
             Login
           </Text>
         </TouchableOpacity>
