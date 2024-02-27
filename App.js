@@ -27,8 +27,8 @@ export default function App() {
   }
   return (
     <View className="flex-1" onLayout={onLayoutRootView}>
-     {/* <Login/> */}
-     <SignUp/>
+     <Login/>
+     {/* <SignUp/> */}
     </View>
   );
 }
