@@ -19,6 +19,7 @@ const SignUp = () => {
         password: password,
       })
       .then((respone) => {
+        Toast.show({ type: "success", text1: respone.data, message });
         console.log(respone);
       })
       .catch((error) => {
@@ -103,10 +104,10 @@ const SignUp = () => {
                   placeholder="Email"
                   placeholderTextColor="#000"
                   className="px-5 py-2"
-                  value={password}
+                  value={email}
                   style={{ fontFamily: "poppinsMedium" }}
                   onChangeText={(text) => {
-                    setPassword(text);
+                    setEmail(text);
                   }}
                 />
               </View>

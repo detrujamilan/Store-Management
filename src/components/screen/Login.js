@@ -5,6 +5,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  
 } from "react-native";
 import React, { useState } from "react";
 import { APP_ENV } from "@env";
@@ -115,12 +116,12 @@ const Login = () => {
             </Text>
           </TouchableOpacity>
         </View>
-        <View className=" justify-center items-center px-8 py-4">
+        {/* <View className=" justify-center items-center px-8 py-4">
           <Text style={{ fontFamily: "poppinsRegular" }} className="text-xl">
             or
           </Text>
-        </View>
-        <View className="px-8">
+        </View> */}
+        {/* <View className="px-8">
           <View className="flex-row justify-between items-center">
             {socialData.map((val, index) => (
               <View className="border-2 p-4 rounded-[10px]" key={index}>
@@ -128,7 +129,7 @@ const Login = () => {
               </View>
             ))}
           </View>
-        </View>
+        </View> */}
         <View className=" justify-center items-center px-8 py-10">
           <Text style={{ fontFamily: "poppinsRegular" }} className="text-xl">
             Don't have an account? <Text className="font-bold">Sign up </Text>
