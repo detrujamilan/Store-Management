@@ -4,7 +4,7 @@ import Login from "./src/components/screen/Login";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import { useCallback } from "react";
-import Inventory from "./src/components/screen/Inventory";
+import Dashboard from "./src/components/screen/Dashboard";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -30,7 +30,7 @@ export default function App() {
     <View className="flex-1" onLayout={onLayoutRootView}>
       {/* <Login /> */}
       {/* <SignUp/> */}
-      <Inventory/>
+      <Dashboard/>
     </View>
   );
 }

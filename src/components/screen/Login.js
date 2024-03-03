@@ -5,7 +5,6 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
-  
 } from "react-native";
 import React, { useState } from "react";
 import { APP_ENV } from "@env";
@@ -40,6 +39,7 @@ const Login = () => {
         setPassword("");
       })
       .catch((error) => {
+        console.log(error);
         Toast.show({
           type: "error",
           text1: error.response.data.message,
