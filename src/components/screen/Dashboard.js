@@ -4,7 +4,6 @@ import {
   StatusBar,
   Image,
   FlatList,
-  ScrollView,
 } from "react-native";
 import { SalesDetails } from "../../../data/DummyData";
 import { AntDesign } from "@expo/vector-icons";
@@ -89,6 +88,7 @@ const Inventory = () => {
           </View>
         </View>
       </View>
+      <Chart/>
       <View className="py-5 flex justify-between flex-row px-3">
         <View>
           <Text style={{ fontFamily: "poppinsMedium" }} className="text-base">
