@@ -1,6 +1,7 @@
 import { View, Text, Dimensions } from "react-native";
 import React from "react";
 import { BarChart, LineChart } from "react-native-chart-kit";
+import { LinearGradient } from "react-native-svg";
 
 const Chart = () => {
   const screenWidth = Dimensions.get("screen").width;
@@ -22,13 +23,12 @@ const Chart = () => {
         yAxisSuffix="k"
         withVerticalLabels
         withHorizontalLabels
-        
         yAxisInterval={1}
         showBarTops={false}
         withInnerLines={false}
         chartConfig={{
-          backgroundGradientFrom: "#FFFFFF",
-          backgroundGradientTo: "#FFFFFF",
+          backgroundGradientFrom: '#fff',
+          backgroundGradientTo: '#fff',
           decimalPlaces: 2,
           color: () => `#5C6F88`,
           labelColor: () => `#5C6F88`,
