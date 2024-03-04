@@ -1,0 +1,11 @@
+diff --git a/node_modules/react-native-snap-carousel/src/index.js b/node_modules/react-native-snap-carousel/src/index.js
+index d937253..4343747 100644
+--- a/node_modules/react-native-snap-carousel/src/index.js
++++ b/node_modules/react-native-snap-carousel/src/index.js
+@@ -2,5 +2,6 @@ import Carousel from './carousel/Carousel';
+ import Pagination from './pagination/Pagination';
+ import ParallaxImage from './parallaximage/ParallaxImage';
+ import { getInputRangeFromIndexes } from './utils/animations';
++import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+ 
+ export { Carousel as default, Pagination, ParallaxImage, getInputRangeFromIndexes };

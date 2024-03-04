@@ -1,12 +1,7 @@
-import {
-  View,
-  Text,
-  StatusBar,
-  Image,
-  FlatList,
-} from "react-native";
+import { View, Text, StatusBar, Image, FlatList } from "react-native";
 import { SalesDetails } from "../../../data/DummyData";
 import { AntDesign } from "@expo/vector-icons";
+import Carousels from "../Carousel/Carousel";
 
 const Inventory = () => {
   return (
@@ -87,6 +82,7 @@ const Inventory = () => {
           </View>
         </View>
       </View>
+      <Chart />
       <View className="py-5 flex justify-between flex-row px-3">
         <View>
           <Text style={{ fontFamily: "poppinsMedium" }} className="text-base">
@@ -137,17 +133,6 @@ const Inventory = () => {
           keyExtractor={(item) => item.id.toString()}
         />
       </View> */}
-      <View className="py-6">
-        <View>
-          <Text
-            className="text-center text-lg"
-            style={{ fontFamily: "poppinsMedium" }}
-          >
-            Fast Moving Items
-          </Text>
-        </View>
-        <View></View>
-      </View>
     </>
   );
 };
