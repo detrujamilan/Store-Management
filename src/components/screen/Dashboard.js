@@ -2,6 +2,7 @@ import { View, Text, StatusBar, Image, FlatList } from "react-native";
 import { SalesDetails } from "../../../data/DummyData";
 import { AntDesign } from "@expo/vector-icons";
 import Carousels from "../Carousel/Carousel";
+import Chart from "../Chart/Chart";
 
 const Inventory = () => {
   return (
@@ -55,7 +56,7 @@ const Inventory = () => {
           </View>
         </View>
       </View>
-      <View className="py-5 w-full flex flex-row px-3">
+      <View className="pt-5 px-3 w-full flex flex-row ">
         <View className="w-[40%]">
           <Text style={{ fontFamily: "poppinsMedium" }} className="text-base">
             Stock Report
@@ -82,7 +83,10 @@ const Inventory = () => {
           </View>
         </View>
       </View>
-      <Chart />
+      <View className="border-t-2 w-[80%] my-4 flex justify-center items-center self-center border-[#D9D9D9]" />
+      <View>
+        <Chart />
+      </View>
       <View className="py-5 flex justify-between flex-row px-3">
         <View>
           <Text style={{ fontFamily: "poppinsMedium" }} className="text-base">
