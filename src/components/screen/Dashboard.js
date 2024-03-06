@@ -1,8 +1,9 @@
 import { View, Text, StatusBar, Image, FlatList } from "react-native";
 import { SalesDetails } from "../../../data/DummyData";
 import { AntDesign } from "@expo/vector-icons";
-import Carousels from "../Carousel/Carousel";
-import Chart from "../Chart/Chart";
+import TableC from "../TableComponent/TableC";
+// import Carousels from "../Carousel/Carousel";
+// import Chart from "../Chart/Chart";
 
 const Inventory = () => {
   return (
@@ -84,9 +85,9 @@ const Inventory = () => {
         </View>
       </View>
       <View className="border-t-2 w-[80%] my-4 flex justify-center items-center self-center border-[#D9D9D9]" />
-      <View>
+      {/* <View>
         <Chart />
-      </View>
+      </View> */}
       <View className="py-5 flex justify-between flex-row px-3">
         <View>
           <Text style={{ fontFamily: "poppinsMedium" }} className="text-base">
@@ -103,6 +104,7 @@ const Inventory = () => {
           <AntDesign name="down" size={20} color="#04B4FC" />
         </View>
       </View>
+      <TableC/>
       {/* <View className="px-3">
         <View className="flex w-screen overflow-x-scroll flex-row justify-between items-center">
           <View>
